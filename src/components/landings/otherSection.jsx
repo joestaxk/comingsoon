@@ -501,7 +501,7 @@ const MyCoinChange = [
       </svg>
     ),
     title: "Vault protection",
-    desc: "Your funds are stored offline in a vault with time delayed withdrawals. Enterprise Offline Storage Available: we are experts at custodial soloutions for exchanges, trusts, hedge funds, and other large holders of Bitcoin and cryptocurrencies"
+    desc: "Your funds are stored offline in a vault with time delayed withdrawals. Enterprise Offline Storage Available: we are experts at custodial soloutions for exchanges, trusts, hedge funds, and other large holders of Bitcoin and cryptocurrencies",
   },
 ];
 export default function OtherSection() {
@@ -545,6 +545,82 @@ export default function OtherSection() {
           {MyCoinChange.map(({ svg, title, desc }, i) => (
             <CardComponent svg={svg} title={title} desc={desc} />
           ))}
+        </div>
+      </div>
+
+      <div
+        className="xl:w-[1200px] lg:w-[1000px] w-full mt-20 scroll-m-4 relative"
+        id="contact"
+      >
+        <img
+          src="/bitc.svg"
+          alt="ethereum"
+          className="absolute bottom-[0rem] left-[0rem]"
+        />
+
+        <img
+          src="/eth.svg"
+          alt="ethereum"
+          className="absolute top-[0rem] left-[10rem]"
+        />
+
+        <h1 className="lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[73px] text-white text-center font-semibold">
+          Contact Us
+        </h1>
+
+        <p className="lg:text-[20px] text-[17px] text-center text-gray-100">
+          Swiftly get in touch with us. 😎
+        </p>
+
+        <div className="flex justify-center mt-10">
+          <form action="" className="w-full">
+            <div className="lg:flex space-y-5 lg:space-y-0  gap-4 items-center">
+              <div className="">
+                <label htmlFor="" className="text-[#f5f5f5]">
+                  FullName
+                </label>
+                <div className="border lg:w-[500px] w-full rounded-lg overflow-hidden border-white/20 focus-within:border-[#F49F1C] mt-1 transition-all">
+                  <input
+                    type="text"
+                    name="fullname"
+                    className="w-full py-2 pl-4 bg-transparent outline-none text-white"
+                  />
+                </div>
+              </div>
+
+              <div className="">
+                <label htmlFor="" className="text-[#f5f5f5]">
+                  Email
+                </label>
+                <div className="border lg:w-[500px] w-full rounded-lg overflow-hidden border-white/20 focus-within:border-[#F49F1C] mt-1 transition-all">
+                  <input
+                    name="email"
+                    type="text"
+                    className="w-full py-2 pl-4 bg-transparent outline-none text-white"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-7">
+              <label htmlFor="message" className="text-[#f5f5f5]">
+                Message
+              </label>
+              <textarea
+                className=" p-2 border w-full rounded-lg outline-none overflow-hidden border-white/20 focus-within:border-[#F49F1C] mt-1 transition-all bg-transparent text-white"
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div className="w-full flex justify-center mt-5">
+              <button className="bg-[#F49F1C]/40 px-10 py-2 rounded-md hover:bg-[#F49F1C] transition-all">
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

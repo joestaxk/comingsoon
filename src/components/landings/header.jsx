@@ -23,7 +23,7 @@ export default function Header() {
               </li>
 
               <li>
-                <a href="#" className="">
+                <a href="#contact" className="">
                   Contact us
                 </a>
               </li>
@@ -154,7 +154,7 @@ export default function Header() {
           </li>
 
           <li className="border-[#f49f1c] border p-3 rounded-lg text-center text-[#f5f5f5] hover:font-semibold cursor-pointer">
-            <a href="#" className="block">
+            <a href="#contact" className="block">
               Contact us
             </a>
           </li>
