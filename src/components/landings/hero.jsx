@@ -65,7 +65,7 @@ export default function Hero() {
               way
             </div>
 
-            <div className="flex gap-8 items-center justify-between md:w-fit w-full py-3 sm:px-8 px-4 border border-[#595758] rounded-[15px] bg-[rgba(255,255,255,0.05)]">
+            <div className="flex gap-8 min-h-[100px] items-center justify-between md:w-fit w-full py-3 sm:px-8 px-4 border border-[#595758] rounded-[15px] bg-[rgba(255,255,255,0.05)]">
               <div className="space-y-4">
                 <p className="text-[#f5f5f5]">Buy crypto with</p>
                 <div className="flex gap-5">
