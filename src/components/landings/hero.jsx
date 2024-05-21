@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="w-full lg:flex items-start xl:justify-around lg:gap-[3rem] lg:space-y-0 space-y-10 pt-[4rem]">
           <div className="space-y-5 lg:w-1/2 w-full lg:pl-10">
             <div
-              className="xl:text-[60px] lg:text-[55px] sm:text-[50px] text-[47px] font- lg:leading-[73px] leading-[60px] font-semibold"
+              className="xl:text-[60px] lg:text-[55px] sm:text-[50px] xs:text-[47px] text-[39px] font- lg:leading-[73px] xs:leading-[60px] leading-[45px] font-semibold"
               style={{
                 background:
                   "linear-gradient(180deg, #FFFFFF 14.46%, rgba(255, 255, 255, 0.42) 100%)",
@@ -60,7 +60,7 @@ export default function Hero() {
               <h1 className="lg:hidden block">non-custodial exchange</h1>
             </div>
 
-            <div className="text-[#ffff] font-[400] text-[18px] leading-[22px] xl:w-[500px]">
+            <div className="text-[#ffff] font-[400] sm:text-[18px] text-[16px] leading-[22px] xl:w-[500px]">
               Exchange Bitcoin and 100+ altcoins in a fast, simple, and secure
               way
             </div>
@@ -69,8 +69,8 @@ export default function Hero() {
               <div className="space-y-4">
                 <p className="text-[#f5f5f5]">Buy crypto with</p>
                 <div className="flex gap-5">
-                  <img src="/visa.svg" alt="visa" />
-                  <img src="/mas_card.svg" alt="mas_card" />
+                  <img src="/visa.svg"  className="lg:w-auto w-[100px]" alt="visa" />
+                  <img src="/mas_card.svg"  className="lg:w-auto w-[100px]" alt="mas_card" />
                 </div>
               </div>
 
