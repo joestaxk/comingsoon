@@ -49,6 +49,7 @@ export default function Hero() {
                 background:
                   "linear-gradient(180deg, #FFFFFF 14.46%, rgba(255, 255, 255, 0.42) 100%)",
                 backgroundClip: "text",
+                "-webkit-background-clip": "text",
                 color: "rgba(0,0,0,0)",
               }}
             >
