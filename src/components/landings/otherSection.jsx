@@ -549,7 +549,7 @@ export default function OtherSection() {
       </div>
 
       <div
-        className="xl:w-[1200px] lg:w-[1000px] w-full mt-20 scroll-m-4 relative"
+        className="lg:w-[1000px] w-full mt-20 scroll-m-4 relative"
         id="contact"
       >
         <img
@@ -574,7 +574,7 @@ export default function OtherSection() {
 
         <div className="flex justify-center mt-10">
           <form action="" className="w-full">
-            <div className="lg:flex space-y-5 lg:space-y-0  gap-4 items-center">
+            <div className="lg:flex space-y-5 lg:space-y-0  gap-4 items-center justify-center">
               <div className="">
                 <label htmlFor="" className="text-[#f5f5f5]">
                   FullName

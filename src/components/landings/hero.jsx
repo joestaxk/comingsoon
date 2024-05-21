@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="w-full lg:flex items-start xl:justify-around lg:gap-[3rem] lg:space-y-0 space-y-10 pt-[4rem]">
           <div className="space-y-5 lg:w-1/2 w-full lg:pl-10">
             <div
-              className="xl:text-[60px] lg:text-[55px] sm:text-[50px] xs:text-[47px] text-[39px] font- lg:leading-[73px] xs:leading-[60px] leading-[45px] font-semibold"
+              className="xl:text-[57px] lg:text-[50px] sm:text-[50px] xs:text-[47px] text-[39px] font- lg:leading-[73px] xs:leading-[60px] leading-[45px] font-semibold"
               style={{
                 background:
                   "linear-gradient(180deg, #FFFFFF 14.46%, rgba(255, 255, 255, 0.42) 100%)",
@@ -80,7 +80,9 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="lg:w-[500px] h-[400px] border border-gray-100/20 rounded-lg"></div>
+          <div className="lg:w-[500px] h-[400px] rounded-lg">
+            <img src="/coin.gif" alt="coin" className="w-full h-full object-contain"/>
+          </div>
         </div>
       </div>
     </div>
