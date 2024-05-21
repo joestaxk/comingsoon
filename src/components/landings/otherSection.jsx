@@ -506,13 +506,13 @@ const MyCoinChange = [
 ];
 export default function OtherSection() {
   return (
-    <div className="relative flex flex-col items-center  w-full mt-20 pb-10 px-5">
+    <div className="relative flex flex-col items-center w-full mt-20 pb-10 sm:px-5 px-2">
       <div className="xl:w-[1150px] lg:w-[1000px] w-full">
         <h1 className="lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[73px] text-white text-center font-semibold">
           It`s easy as 1-2-3
         </h1>
 
-        <div className="flex justify-center w-full gap-5 mt-10 flex-wrap relative">
+        <div className="flex justify-center w-full gap-3 mt-10 flex-wrap relative">
           <img
             src="/eth.svg"
             alt="ethereum"
@@ -541,7 +541,7 @@ export default function OtherSection() {
           </p>
         </div>
 
-        <div className="flex justify-center w-full gap-5 mt-10 flex-wrap relative">
+        <div className="flex justify-center w-full gap-3 mt-10 flex-wrap relative">
           {MyCoinChange.map(({ svg, title, desc }, i) => (
             <CardComponent svg={svg} title={title} desc={desc} />
           ))}

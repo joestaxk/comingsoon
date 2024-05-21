@@ -42,7 +42,7 @@ export default function Hero() {
         </svg>
 
         <div className="w-full lg:flex items-start xl:justify-around lg:gap-[3rem] lg:space-y-0 space-y-10 pt-[4rem]">
-          <div className="space-y-5 lg:w-1/2 w-full">
+          <div className="space-y-5 lg:w-1/2 w-full lg:pl-10">
             <div
               className="xl:text-[60px] lg:text-[55px] sm:text-[50px] text-[47px] font- lg:leading-[73px] leading-[60px] font-semibold"
               style={{
