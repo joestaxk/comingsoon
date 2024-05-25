@@ -3,13 +3,25 @@ import { useEffect } from "react";
 export default function Hero() {
   useEffect(() => {
     const animate = document.querySelector("#animate");
-    animate.addEventListener("load", () => {
-      animate.animate([
-        {opacity: 0, transform: "translateY(5rem)"},
-        {opacity: 1, transform: "translateY(0rem)"}
-      ], {duration: 1000})
-    })
-  }, [])
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animate.addEventListener("load", () => {
+            animate.animate(
+              [
+                { opacity: 0, transform: "translateY(5rem)" },
+                { opacity: 1, transform: "translateY(0rem)" },
+              ],
+              { duration: 1000 }
+            );
+          });
+
+        observer.unobserve(animate)
+        }
+      });
+    });
+    observer.observe(animate)
+  }, []);
   return (
     <div className="flex justify-center relative">
       <div className="light_yellow xl:w-[1150px] lg:w-[1000px] w-full sm:px-5 px-2 relative lg:flex py-3 justify-around items-center">
@@ -80,19 +92,36 @@ export default function Hero() {
               <div className="space-y-4">
                 <p className="text-[#f5f5f5]">Buy crypto with</p>
                 <div className="flex gap-5">
-                  <img src="/visa.svg"  className="lg:w-auto w-[100px]" alt="visa" />
-                  <img src="/mas_card.svg"  className="lg:w-auto w-[100px]" alt="mas_card" />
+                  <img
+                    src="/visa.svg"
+                    className="lg:w-auto w-[100px]"
+                    alt="visa"
+                  />
+                  <img
+                    src="/mas_card.svg"
+                    className="lg:w-auto w-[100px]"
+                    alt="mas_card"
+                  />
                 </div>
               </div>
 
               <div className="">
-                <img src="/soon.svg" className="lg:w-auto w-[150px]" alt="coming soon" />
+                <img
+                  src="/soon.svg"
+                  className="lg:w-auto w-[150px]"
+                  alt="coming soon"
+                />
               </div>
             </div>
           </div>
 
           <div className="lg:w-[500px] h-[400px] overflow-hidden rounded-lg">
-            <img id="animate" src="/mask-phone.png" alt="coin" className="w-full h-[500px] object-contain"/>
+            <img
+              id="animate"
+              src="/mask-phone.png"
+              alt="coin"
+              className="w-full h-[500px] object-contain"
+            />
           </div>
         </div>
       </div>
