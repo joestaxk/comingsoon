@@ -17,7 +17,7 @@ export default function Header() {
               </li>
 
               <li>
-                <a href="#" className="">
+                <a href="http://liachain.com/" target="_parent" className="">
                   ICO
                 </a>
               </li>
