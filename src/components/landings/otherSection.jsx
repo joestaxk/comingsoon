@@ -532,7 +532,7 @@ export default function OtherSection() {
 
       <div className="light_yellow_2 xl:w-[1200px] lg:w-[1000px] w-full mt-20">
         <h1 className="lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[73px] text-white text-center font-semibold">
-          Why MyCoinChange
+          Why Liaex
         </h1>
         <div className="">
           <p className="lg:text-[20px] text-[17px] text-center text-white/40">
