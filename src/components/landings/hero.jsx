@@ -115,7 +115,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="lg:w-[500px] h-[500px] overflow-hidden rounded-lg">
+          <div className="lg:w-[500px] lg:h-[500px] overflow-hidden rounded-lg lg:translate-y-[-1.8rem] translate-y-[0]">
             <img
               id="animate"
               src="/mockup.svg"

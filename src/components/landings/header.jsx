@@ -17,7 +17,7 @@ export default function Header() {
               </li>
 
               <li>
-                <a href="http://liachain.com/" target="_parent" className="">
+                <a href="https://liachain.com" target="_blank" className="">
                   ICO
                 </a>
               </li>
@@ -149,7 +149,7 @@ export default function Header() {
           </li>
 
           <li className="border-[#f49f1c] border p-3 rounded-lg text-center text-[#f5f5f5] hover:font-semibold cursor-pointer">
-            <a href="https://liachain.com" target="_blank"  className="block">
+            <a href="https://liachain.com" target="_blank" className="block">
               ICO
             </a>
           </li>
