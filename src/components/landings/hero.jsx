@@ -115,12 +115,12 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="lg:w-[500px] h-[400px] overflow-hidden rounded-lg">
+          <div className="lg:w-[500px] h-[500px] overflow-hidden rounded-lg">
             <img
               id="animate"
-              src="/mask-phone.png"
+              src="/mockup.svg"
               alt="coin"
-              className="w-full h-[500px] object-contain"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>

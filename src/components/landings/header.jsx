@@ -6,7 +6,7 @@ export default function Header() {
     <>
       <div className="relative flex justify-center z-[99] overflow-hidden">
         <div className="xl:w-[1400px] w-full flex py-3  px-2 lg:justify-around justify-between items-center">
-          <img src="/Logo.png" className="w-[200px] " alt="liachain" />
+          <img src="/liaex.png" className="w-[200px] " alt="liaex" />
 
           <div className="text-[#f5f5f5] text-[1.15rem] flex items-center gap-5">
             <ul className="md:flex gap-5 hidden">
