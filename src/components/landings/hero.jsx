@@ -1,4 +1,15 @@
+import { useEffect } from "react";
+
 export default function Hero() {
+  useEffect(() => {
+    const animate = document.querySelector("#animate");
+    animate.addEventListener("load", () => {
+      animate.animate([
+        {opacity: 0, transform: "translateY(5rem)"},
+        {opacity: 1, transform: "translateY(0rem)"}
+      ], {duration: 1000})
+    })
+  }, [])
   return (
     <div className="flex justify-center relative">
       <div className="light_yellow xl:w-[1150px] lg:w-[1000px] w-full sm:px-5 px-2 relative lg:flex py-3 justify-around items-center">
@@ -17,7 +28,7 @@ export default function Hero() {
           width="2"
           height="723"
           viewBox="0 0 2 723"
-          className="absolute left-0 top-[6px] hidden lg:block"
+          className="absolute left-0 top-[0px] hidden lg:block"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -80,8 +91,8 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="lg:w-[500px] h-[400px] rounded-lg">
-            <img src="/coin.gif" alt="coin" className="w-full h-full object-contain"/>
+          <div className="lg:w-[500px] h-[400px] overflow-hidden rounded-lg">
+            <img id="animate" src="/mask-phone.png" alt="coin" className="w-full h-[500px] object-contain"/>
           </div>
         </div>
       </div>
